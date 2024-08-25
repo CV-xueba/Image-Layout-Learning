@@ -24,6 +24,7 @@ LODB images were drawn from a variety of open datasets, including PARA, AADB, AV
 
 
 ## LODB Layout Categories and Abbreviations
+<img width="746" alt="lodb-all (1)" src="https://github.com/user-attachments/assets/8f6450e6-76fa-4601-af82-000caac49c99">
 
 The LODB dataset encompasses 17 distinct image layout categories, each represented by an abbreviation for easy reference. Below is a summary of the abbreviations, their corresponding layout classes, and the number of images available for each category:
 
