@@ -66,8 +66,6 @@ The LODB dataset encompasses 17 distinct image layout categories, each represent
 
 LODB sets itself apart by emphasizing semantic diversity and detailed categorization. Compared to other datasets, LODB shows higher semantic variation within each category, providing richer data for algorithm testing.
 
-### Qualitative and Quantitative Analysis of LODB
-
 Our selection process prioritized reliability and semantic diversity by excluding atypical images and reducing semantic repetition within each layout category. Compared to CADB[^1] and KU-PCP[^2], LODB shows significantly higher semantic intra-class variations. Additionally, LODB provides more detailed labels, differentiating not only the number and arrangement of key layout elements but also variations in the orientation of similar structures. Figure 1 illustrates the dataset's layout categories and semantic diversity.
 
 We use intra-class variation magnitude[^3] to quantify semantic diversity within each layout category. A higher intra-class variation indicates greater semantic dispersion, implying richer information. For a layout category \(c\), the semantic intra-class variation \(d^c\) is calculated as follows:
@@ -77,4 +75,10 @@ d^c = \frac{1}{N} \sum_{i=1}^{N} \left\| \mathbf{x}_i^c - \frac{1}{N} \sum_{i=1}
 \]
 
 where \(N\) is the number of images in category \(c\), and \(\mathbf{x}_i^c\) represents the semantic vector of image \(i\), obtained via the method described in [^4].
+
+[^1]: B. Zhang, L. Niu, and L. Zhang, “Image composition assessment with saliency-augmented multi-pattern pooling,” *arXiv preprint arXiv:2104.03133*, 2021.  
+[^2]: J.-T. Lee, H.-U. Kim, C. Lee, and C.-S. Kim, “Photographic composition classification and dominant geometric element detection for outdoor scenes,” *Journal of Visual Communication and Image Representation*, vol. 55, pp. 91–105, 2018.  
+[^3]: J.-T. Lee, H.-U. Kim, C. Lee, and C.-S. Kim, “Photographic composition classification and dominant geometric element detection for outdoor scenes,” *Journal of Visual Communication and Image Representation*, vol. 55, pp. 91–105, 2018.  
+[^4]: J.-T. Lee, H.-U. Kim, C. Lee, and C.-S. Kim, “Photographic composition classification and dominant geometric element detection for outdoor scenes,” *Journal of Visual Communication and Image Representation*, vol. 55, pp. 91–105, 2018.
+
 
