@@ -65,3 +65,16 @@ The LODB dataset encompasses 17 distinct image layout categories, each represent
 ## Qualitative and Quantitative Insights
 
 LODB sets itself apart by emphasizing semantic diversity and detailed categorization. Compared to other datasets, LODB shows higher semantic variation within each category, providing richer data for algorithm testing.
+
+### Qualitative and Quantitative Analysis of LODB
+
+Our selection process prioritized reliability and semantic diversity by excluding atypical images and reducing semantic repetition within each layout category. Compared to CADB[^1] and KU-PCP[^2], LODB shows significantly higher semantic intra-class variations. Additionally, LODB provides more detailed labels, differentiating not only the number and arrangement of key layout elements but also variations in the orientation of similar structures. Figure 1 illustrates the dataset's layout categories and semantic diversity.
+
+We use intra-class variation magnitude[^3] to quantify semantic diversity within each layout category. A higher intra-class variation indicates greater semantic dispersion, implying richer information. For a layout category \(c\), the semantic intra-class variation \(d^c\) is calculated as follows:
+
+\[
+d^c = \frac{1}{N} \sum_{i=1}^{N} \left\| \mathbf{x}_i^c - \frac{1}{N} \sum_{i=1}^{N} \mathbf{x}_i^c \right\|_2
+\]
+
+where \(N\) is the number of images in category \(c\), and \(\mathbf{x}_i^c\) represents the semantic vector of image \(i\), obtained via the method described in [^4].
+
